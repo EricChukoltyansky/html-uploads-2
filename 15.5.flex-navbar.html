@@ -1,36 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<style>
-.container {
-    display: flex;
-    background-color: beige;
-    justify-content: space-between;
-}
+  </head>
+  <style>
+    .container {
+      display: flex;
+      background-color: beige;
+      justify-content: space-between;
+      flex-flow: wrap;
+    }
 
-.menu {
-    display: flex;
-    align-self: center;
-    justify-content: space-evenly;
-    
-    
+    .menu {
+      display: flex;
+      align-self: center;
+      justify-content: space-evenly;
+    }
 
-}
-</style>
-<body>
+    .item {
+      margin-right: 3rem;
+    }
+
+    @media (max-width: 630px) {
+      .menu {
+        display: flex;
+        flex-flow: column wrap;
+      }
+
+      .item {
+          padding-bottom: 2.6rem;
+      }
+    }
+  </style>
+  <body>
     <div class="container">
-        <div class="logo"><h1>Appleseeds</h1></div>
-        <div class="menu">
-            <div>HOME</div>
-            <div>ABOUT</div>
-            <div>PORTFOLIO</div>
-            <div>CONTACT</div>
-        </div>
+      <div class="logo"><h1>Appleseeds</h1></div>
+      <div class="menu">
+        <div class="item">HOME</div>
+        <div class="item">ABOUT</div>
+        <div class="item">PORTFOLIO</div>
+        <div class="item">CONTACT</div>
+      </div>
     </div>
-</body>
+  </body>
 </html>
