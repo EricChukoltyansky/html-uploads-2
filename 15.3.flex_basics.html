@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <style>
+    .green,
+    .blue,
+    .red {
+      width: 8rem;
+      height: 8rem;
+    }
+
+    .green {
+      background-color: green;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .container {
+      display: flex;
+      width: 60rem;
+      height: 30rem;
+      justify-content: center;
+      background-color: beige;
+      align-items:flex-end;
+      justify-content: end;
+      margin: 0 auto
+
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="green"></div>
+      <div class="red"></div>
+      <div class="blue"></div>
+    </div>
+  </body>
 </html>
