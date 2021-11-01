@@ -18,21 +18,76 @@
 
     a[target]:hover:after {
       content: attr(data-tooltip);
-      color: black;
+      color: beige;
       position: absolute;
       background-color: bisque;
-      bottom: 3rem;
+      bottom:2.5rem;
       right: 3rem;
       border-radius: 25px;
       width: 5rem;
       height: 2rem;
       text-align: center;
       vertical-align: middle;
+      border: 5px solid hsl(0, 0%, 40%);
+      padding: 5px;
+      background: hsl(0, 0%, 20%);
+      outline: 5px solid hsl(0%, 0%, 60%);
+      box-shadow: 0 0 0 10px hsl(0, 0%, 80%), 0 0 0 15px hsl(0, 0%, 90%);
     }
+
+    /* width: 100px;
+  
+  
+  border: 5px solid hsl(0, 0%, 40%);
+  
+  
+  padding: 5px;
+  background: hsl(0, 0%, 20%);
+  
+  
+  outline: 5px solid hsl(0, 0%, 60%);
+  
+  
+  box-shadow:
+      0 0 0 10px hsl(0, 0%, 80%),
+      0 0 0 15px hsl(0, 0%, 90%); */
+
+    /* a[target]:hover:before {
+      content: "";
+
+      width: 1.6rem;
+      height: 1.6rem;
+      border-radius: 50%;
+      background-color: bisque;
+      position: absolute;
+      bottom: 1.2rem;
+      right: 2.2rem;
+     
+    } */
 
     a[target]:after {
       content: "";
       position: relative;
+    }
+
+    .circle1 {
+      background: bisque;
+      border-radius: 50%;
+      height: 0.5rem;
+      width: 0.5rem;
+      position: absolute;
+    }
+    .circle2 {
+      background: bisque;
+      border-radius: 50%;
+      height: 1rem;
+      width: 1rem;
+    }
+    .circle3 {
+      background: bisque;
+      border-radius: 50%;
+      height: 1.5rem;
+      width: 1.5rem;
     }
   </style>
   <body>
@@ -57,5 +112,8 @@
       dolore, sunt voluptatum corrupti veniam modi libero quasi hic quae dolores
       repudiandae deserunt?
     </p>
+    <div class="circle1" target=""></div>
+    <div class="circle3"></div>
+    <div class="circle2"></div>
   </body>
 </html>
