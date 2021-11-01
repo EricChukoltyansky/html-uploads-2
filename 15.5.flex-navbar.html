@@ -18,6 +18,7 @@
       display: flex;
       align-self: center;
       justify-content: space-evenly;
+      align-content: center;
     }
 
     .item {
@@ -26,12 +27,14 @@
 
     @media (max-width: 630px) {
       .menu {
-        display: flex;
+        display: inherit;
         flex-flow: column wrap;
       }
 
       .item {
-          padding-bottom: 2.6rem;
+        padding-bottom: 2.6rem;
+        text-align: center;
+        width: 100vw;
       }
     }
   </style>
