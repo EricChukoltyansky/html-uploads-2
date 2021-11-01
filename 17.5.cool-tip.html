@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      margin: 5rem;
+    }
+
+    a[target] {
+      position: relative;
+      text-decoration: none;
+    }
+
+    a[target]:hover:after {
+      content: attr(data-tooltip);
+      color: black;
+      position: absolute;
+      background-color: bisque;
+      bottom: 3rem;
+      right: 3rem;
+      border-radius: 25px;
+      width: 5rem;
+      height: 2rem;
+      text-align: center;
+      vertical-align: middle;
+    }
+
+    a[target]:after {
+      content: "";
+      position: relative;
+    }
+  </style>
+  <body>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+      culpa tempora reiciendis corrupti numquam! Ipsa est, dignissimos debitis
+      dolores aperiam eveniet iste veritatis quia numquam aliquid eum aspernatur
+      necessitatibus repellat quasi
+      <a href="#" target="" data-tooltip="this is the first">quisquam</a>
+      temporibus maxime nulla architecto provident explicabo laboriosam et,
+      deserunt suscipit? Aut officia eligendi corrupti id facere, nulla neque.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam numquam
+      minus debitis, ratione perspiciatis maxime odit aperiam esse itaque! Ex
+      officiis laboriosam fuga quo ipsa dicta, similique,
+      <a href="#" target="" data-tooltip="this is the second">accusantium</a>
+      temporibus modi obcaecati, ea ut? Sequi non voluptate quis quam. Magni
+      ratione nihil quam similique. Dignissimos at aspernatur modi excepturi
+      atque deserunt et commodi recusandae quo. Laudantium obcaecati sint
+      praesentium molestias esse libero, reiciendis nostrum. Rem rerum
+      voluptatem ab vero magnam distinctio, hic illo ducimus eos fugit corrupti
+      nobis sapiente deserunt natus itaque voluptate in! Et distinctio, rem fuga
+      dolore, sunt voluptatum corrupti veniam modi libero quasi hic quae dolores
+      repudiandae deserunt?
+    </p>
+  </body>
+</html>
