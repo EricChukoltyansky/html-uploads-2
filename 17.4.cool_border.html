@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .left-top {
+      background-color: black;
+      width: 15rem;
+      height: 15rem;
+      position: relative;
+    }
+
+    .left-top:after {
+      content: "";
+      color: white;
+      text-align: center;
+      line-height: 9rem;
+      /* background-color:blueviolet; */
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 2.5rem;
+      left: 2.5rem;
+      border-left: 2px solid brown;
+      border-top: 2px solid brown;
+      border-right: 2px solid black;
+      border-top-left-radius: 25px;
+    }
+
+    .left-bottom:after {
+      content: "";
+      color: white;
+      text-align: center;
+      line-height: 9rem;
+      /* background-color:blueviolet; */
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 9rem;
+      left: 3rem;
+      border-bottom: 2px solid brown;
+      border-left: 2px solid brown;
+      border-bottom-left-radius: 25px;
+    }
+
+    .right-bottom:after {
+      content: "";
+      color: white;
+      text-align: center;
+      line-height: 9rem;
+      /* background-color:blueviolet; */
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 9rem;
+      left: 9rem;
+      border-bottom: 2px solid brown;
+      border-right: 2px solid brown;
+      border-bottom-right-radius: 25px;
+    }
+    .right-top:after {
+      content: "";
+      color: white;
+      text-align: center;
+      line-height: 9rem;
+      /* background-color:blueviolet; */
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 3rem;
+      left: 9rem;
+      border-top: 2px solid brown;
+      border-right: 2px solid brown;
+      border-top-right-radius: 25px;
+    }
+
+    .middle:after {
+      content: "cooler";
+      color: white;
+      text-align: center;
+      line-height: 9rem;
+      /* background-color:blueviolet; */
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      top: 3rem;
+      left: 6rem;
+    }
+  </style>
+  <body>
+    <div class="left-top"></div>
+    <div class="left-bottom"></div>
+    <div class="right-bottom"></div>
+    <div class="right-top"></div>
+    <div class="middle"></div>
+  </body>
+</html>
