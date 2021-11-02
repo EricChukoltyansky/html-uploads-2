@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    body {
+      background-color: yellowgreen;
+    }
+    .container {
+      display: flex;
+      justify-content: center;
+      margin-top: 3rem;
+    }
+
+    .home {
+      margin-right: 3rem;
+      /* width:2.7rem; */
+      height: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .home::after {
+      content: "";
+      position: absolute;
+      border-top: 2px solid black;
+      /* background-color: blue; */
+      height: 1.3rem;
+      width: 2.7rem;
+      right: 2.7rem;
+      top: 1.1rem;
+      transition: all ease-in-out 0.3s;
+    }
+
+    .home::before {
+      content: "";
+      position: absolute;
+      border-top: 2px solid black;
+      background-color: blue;
+      height: 0rem;
+      width: 2.7rem;
+      left: 2.5rem;
+      bottom: 1.4rem;
+      transition: all ease-in-out 0.3s;
+      /* z-index:1; */
+    }
+
+    .home:hover::after {
+      transform: translateX(2.7rem);
+    }
+
+    .home:hover::before {
+      transform: translateX(-2.7rem);
+    }
+
+    .about {
+      margin-right: 3rem;
+      /* width:2.7rem; */
+      height: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about::after {
+      content: "";
+      position: absolute;
+      border-top: 2px solid black;
+      /* background-color: blue; */
+      height: 1.3rem;
+      width: 2.7rem;
+      right: 2.7rem;
+      top: 1.1rem;
+      transition: all ease-in-out 0.3s;
+    }
+
+    .about::before {
+      content: "";
+      position: absolute;
+      border-top: 2px solid black;
+      background-color: blue;
+      height: 0rem;
+      width: 2.7rem;
+      left: 2.5rem;
+      bottom: 1.4rem;
+      transition: all ease-in-out 0.3s;
+      /* z-index:1; */
+    }
+
+    .about:hover::after {
+      transform: translateX(2.7rem);
+    }
+
+    .about:hover::before {
+      transform: translateX(-2.7rem);
+    }
+
+    .services {
+      margin-right: 3rem;
+      /* width:2.7rem; */
+      height: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .services::after {
+      content: "";
+      position: absolute;
+      border-top: 2px solid black;
+      /* background-color: blue; */
+      height: 1.3rem;
+      width: 3.5rem;
+      right: 3.5rem;
+      top: 1.1rem;
+      transition: all ease-in-out 0.3s;
+    }
+
+    .services::before {
+      content: "";
+      position: absolute;
+      border-top: 2px solid black;
+      background-color: blue;
+      height: 0rem;
+      width: 3.5rem;
+      left: 3.5rem;
+      bottom: 1.4rem;
+      transition: all ease-in-out 0.3s;
+      /* z-index:1; */
+    }
+
+    .services:hover::after {
+      transform: translateX(3.5rem);
+    }
+
+    .services:hover::before {
+      transform: translateX(-3.5rem);
+    }
+
+    .portfolio {
+      margin-right: 3rem;
+      /* width:2.7rem; */
+      height: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .portfolio::after {
+      content: "";
+      position: absolute;
+      border-top: 2px solid black;
+      /* background-color: blue; */
+      height: 1.3rem;
+      width: 3.6rem;
+      right: 3.6rem;
+      top: 1.1rem;
+      transition: all ease-in-out 0.3s;
+    }
+
+    .portfolio::before {
+      content: "";
+      position: absolute;
+      border-top: 2px solid black;
+      background-color: blue;
+      height: 0rem;
+      width: 3.6rem;
+      left: 3.6rem;
+      bottom: 1.4rem;
+      transition: all ease-in-out 0.3s;
+      /* z-index:1; */
+    }
+
+    .portfolio:hover::after {
+      transform: translateX(3.6rem);
+    }
+
+    .portfolio:hover::before {
+      transform: translateX(-3.6rem);
+    }
+
+    .contact {
+      margin-right: 3rem;
+      /* width:2.7rem; */
+      height: 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .contact::after {
+      content: "";
+      position: absolute;
+      border-top: 2px solid black;
+      /* background-color: blue; */
+      height: 1.3rem;
+      width: 3.5rem;
+      right: 3.5rem;
+      top: 1.1rem;
+      transition: all ease-in-out 0.3s;
+    }
+
+    .contact::before {
+      content: "";
+      position: absolute;
+      border-top: 2px solid black;
+      background-color: blue;
+      height: 0rem;
+      width: 3.5rem;
+      left: 3.5rem;
+      bottom: 1.4rem;
+      transition: all ease-in-out 0.3s;
+      /* z-index:1; */
+    }
+
+    .contact:hover::after {
+      transform: translateX(3.5rem);
+    }
+
+    .contact:hover::before {
+      transform: translateX(-3.5rem);
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div class="home">Home</div>
+      <div class="about">About</div>
+      <div class="services">Services</div>
+      <div class="portfolio">Portfolio</div>
+      <div class="contact">Contact</div>
+    </div>
+  </body>
+</html>
