@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      :root {
+        --primary-color: #333;
+        --secondary-color: #ccc;
+        --light-color: rgb(128, 97, 97);
+      }
+      @media (max-width: 850px) {
+        .container {
+          padding-top: 200px;
+        }
+
+        h1 {
+          padding-top: 150px;
+        }
+      }
+
+      @media (max-width: 1500px) {
+        * {
+          box-sizing: border-box;
+          margin: 0;
+          padding: 0;
+        }
+      }
+      body {
+        background: url("https://images.unsplash.com/photo-1635358530056-a86f39f27cfe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1035&q=80")
+          no-repeat center center/cover;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      header h1 {
+        text-align: center;
+        padding-top: 7rem;
+        font-size: calc(1rem + 3vw);
+        color: var(--primary-color);
+      }
+      header p {
+        text-align: center;
+        padding-top: 7rem;
+        font-size: calc(1rem + 3vw);
+        color: var(--secondary-color);
+      }
+      .container div {
+        text-align: center;
+        background-color: azure;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 1.3rem;
+        display: inline-block;
+        color: white;
+        background-color: var(--light-color);
+      }
+      .container {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Hello there, I'm an h1</h1>
+      <p>No, I'm not</p>
+    </header>
+
+    <div class="container">
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro
+        recusandae facere delectus! Recusandae, ipsum. Necessitatibus sed
+        nesciunt maiores quaerat.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro
+        recusandae facere delectus! Recusandae, ipsum. Necessitatibus sed
+        nesciunt maiores quaerat.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro
+        recusandae facere delectus! Recusandae, ipsum. Necessitatibus sed
+        nesciunt maiores quaerat.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis porro
+        recusandae facere delectus! Recusandae, ipsum. Necessitatibus sed
+        nesciunt maiores quaerat.
+      </div>
+    </div>
+  </body>
+</html>
