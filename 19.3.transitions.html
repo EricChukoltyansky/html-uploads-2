@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    :root {
+      --general-height: 5rem;
+      --general-width: 11rem;
+      --general-border: 3px solid black;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      width: 40rem;
+      /* overflow:hidden; */
+
+    }
+
+    .rotate {
+      height: var(--general-height);
+      width: var(--general-width);
+      border: var(--general-border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .rotate::after {
+      content: "";
+      height: var(--general-width);
+      width: var(--general-height);
+      /* border: var(--general-border); */
+      background-color: yellow;
+      position: absolute;
+      transition: all ease-in-out 0.7s;
+      top: -12.1rem;
+      /* left: -0rem; */
+
+    }
+
+    .rotate:hover::after {
+        transform: rotate(180deg);
+        width: var(--general-width);
+        height: var(--general-height);
+        top:0;
+        left:0;
+
+    }
+
+     .translate {
+      content: "translate";
+      height: var(--general-height);
+      width: var(--general-width);
+      border: var(--general-border);
+      position: relative;
+      color: black;
+      text-align: center;
+    line-height: 4rem;
+        overflow-x: hidden;
+
+
+    }
+
+    .translate::before {
+        content: attr(data-type);
+        height: var(--general-height);
+        width: var(--general-width);
+        background-color: rgb(75, 22, 22);
+        position: absolute;
+        transition: all ease-in-out 0.7s;
+        right: 11.2rem;
+        text-align: center;
+        line-height: 4rem;
+    }
+
+    .translate:hover::before {
+       transform: translateX(11.2rem);
+       color: white;
+       text-align: center;
+       line-height: 4rem;
+    }
+    .translateY {
+      height: var(--general-height);
+      width: var(--general-width);
+      border: var(--general-border);
+    }
+
+    .scaleAndOpacity {
+      margin-top: 4rem;
+      margin-left: 14.3rem;
+      height: var(--general-height);
+      width: var(--general-width);
+      border: var(--general-border);
+    } */
+  </style>
+  <body>
+    <div class="container">
+      <div class="rotate"></div>
+      <div class="translate" data-type="translate">translate</div>
+      <div class="translateY"></div>
+    </div>
+    <div class="scaleAndOpacity"></div>
+  </body>
+</html>
