@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+
+    :root {
+        --clear-width: 120px;
+        --register-width:160px;
+        --submit-width::180px;
+        --green-color: green;
+        --text-color: white;
+        --blue-color: blue;
+        --yellow-color: yellow;
+        --primary-color: #334660;
+        --ghost-color: transparent;
+
+
+    }
+
+     body {
+       background-color: var(--primary-color);
+       color: var(--text-color);
+       text-align: center;
+     }
+     .flat {
+       color:var(--text-color);
+     }
+
+     .round {
+       border-radius: 25px;
+       color:var(--text-color);
+     }
+
+     .register {
+       height: 30px;
+       width: var(--register-width);
+       color:var(--text-color)
+     }
+
+     .clear {
+       height: 25px;
+       width: var(--clear-width) ;
+       color: white;
+     }
+
+     .ghost {
+       background-color: var(--ghost-color);
+     }
+
+     .register.flat {
+       background-color: var(--green-color);
+     }
+
+     .register.flat:hover {
+       filter: brightness(120%);
+     }
+
+     .register.flat.ghost {
+       background-color:var(--ghost-color);
+       border-color: var(--green-color);
+       outline: none;
+       transition: all 0.2s ease-in-out;
+     }
+
+     .register.flat.ghost:hover {
+       background-color: #01dd77;
+     }
+
+     .register.round {
+       background-color: #fd2324;
+     }
+
+     .register.round:hover {
+       filter: brightness(120%);
+     }
+
+
+
+     .register.round.ghost {
+       background-color: transparent;
+       border-color: #fd2324;
+       box-shadow: none;
+       transition: ease 0.3s;
+     }
+
+     .register.round.ghost:hover {
+       background-color: #fd2324;
+     }
+
+     .clear.flat {
+       background-color: #fd2324;
+     }
+
+     .clear.flat:hover {
+       filter: brightness(120%);
+     }
+
+     .clear.flat.ghost {
+       background-color: transparent;
+       border-color: #fd2324;
+       transition: ease 0.3s;
+     }
+
+     .clear.flat.ghost:hover {
+       background-color: #fd2324;
+     }
+
+     .clear.round {
+       background-color: #f5cd02;
+     }
+
+     .clear.round:hover {
+         filter: brightness(120%)
+     }
+
+     .clear.round.ghost {
+       background-color: transparent;
+       border-color: #f5cd02;
+       transition: ease 0.3s;
+     }
+
+     .clear.round.ghost:hover {
+       background-color: #f5cd02;
+     }
+
+     .submit.flat {
+       background-color: #0b8dd7;
+     }
+
+     .submit.flat:hover {
+         filter: brightness(120%)
+     }
+
+     .submit.flat.ghost {
+       border-color: #0b8dd7;
+       background-color: transparent;
+       transition: ease 0.3s;
+     }
+
+     .submit.flat.ghost:hover {
+       background-color: #0b8dd7;
+     }
+
+     .submit.round {
+       background-color: #b1a6a1;
+     }
+
+     .submit.round:hover {
+         filter: brightness(120%)
+     }
+
+     .submit.round.ghost {
+       border-color: #01dd77;
+       background-color: transparent;
+       transition: ease 0.3s;
+     }
+
+     .submit.round.ghost:hover {
+       background-color: #01dd77;
+     }
+  </style>
+  <body>
+    <h1>Flat</h1>
+    <button class="flat register">Register</button>
+    <button class="flat clear">Clear</button>
+    <button class="flat submit">Submit</button><br /><br /><br />
+    <h1>Round</h1>
+    <button class="round register">Register</button>
+    <button class="round clear">Clear</button>
+    <button class="round submit">Submit</button><br /><br /><br />
+    <h1>Flat Ghost</h1>
+    <button class="register flat ghost">Register</button>
+    <button class="clear flat ghost">Clear</button>
+    <button class="submit flat ghost">Submit</button><br /><br /><br />
+    <h1>Round Ghost</h1>
+    <button class="register round ghost">Register</button>
+    <button class="clear round ghost">Clear</button>
+    <button class="submit round ghost">Submit</button><br /><br /><br />
+  </body>
+</html>
