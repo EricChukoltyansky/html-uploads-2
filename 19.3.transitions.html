@@ -13,96 +13,145 @@
       --general-border: 3px solid black;
     }
 
+    .size {
+      height: var(--general-height);
+      width: var(--general-width);
+      border: var(--general-border);
+    }
+
     .container {
       display: flex;
       justify-content: space-between;
       width: 40rem;
       /* overflow:hidden; */
-
     }
 
     .rotate {
-      height: var(--general-height);
-      width: var(--general-width);
-      border: var(--general-border);
       position: relative;
       overflow: hidden;
+      text-align: center;
+      line-height: 4rem;
     }
 
     .rotate::after {
       content: "";
       height: var(--general-width);
       width: var(--general-height);
-      /* border: var(--general-border); */
+
       background-color: yellow;
       position: absolute;
       transition: all ease-in-out 0.7s;
       top: -12.1rem;
       /* left: -0rem; */
-
+      z-index: -1;
     }
 
     .rotate:hover::after {
-        transform: rotate(180deg);
-        width: var(--general-width);
-        height: var(--general-height);
-        top:0;
-        left:0;
-
+      content: "";
+      transform: rotate(180deg);
+      width: var(--general-width);
+      height: var(--general-height);
+      top: 0;
+      left: 0;
+      text-align: center;
+      line-height: 4rem;
     }
 
-     .translate {
-      content: "translate";
-      height: var(--general-height);
-      width: var(--general-width);
-      border: var(--general-border);
+    .translate {
       position: relative;
       color: black;
       text-align: center;
-    line-height: 4rem;
-        overflow-x: hidden;
+      line-height: 4rem;
+      overflow-x: hidden;
+    }
 
-
+    .translate:hover {
+      color: white;
     }
 
     .translate::before {
-        content: attr(data-type);
-        height: var(--general-height);
-        width: var(--general-width);
-        background-color: rgb(75, 22, 22);
-        position: absolute;
-        transition: all ease-in-out 0.7s;
-        right: 11.2rem;
-        text-align: center;
-        line-height: 4rem;
+      content: "";
+      height: var(--general-height);
+      width: var(--general-width);
+      background-color: rgb(75, 22, 22);
+      position: absolute;
+      transition: all ease-in-out 0.7s;
+      right: 11.2rem;
+      text-align: center;
+      line-height: 4rem;
     }
 
     .translate:hover::before {
-       transform: translateX(11.2rem);
-       color: white;
-       text-align: center;
-       line-height: 4rem;
+      transform: translateX(11.2rem);
+      color: white;
+      text-align: center;
+      line-height: 4rem;
+      z-index: -1;
     }
+
     .translateY {
+      /* height: var(--general-height);
+      width: var(--general-width);
+      border: var(--general-border); */
+      text-align: center;
+      line-height: 4rem;
+      position: relative;
+    }
+
+    .translateY::before {
+      content: "";
       height: var(--general-height);
       width: var(--general-width);
-      border: var(--general-border);
+      text-align: center;
+      line-height: 4rem;
+      background-color: red;
+      position: absolute;
+      bottom: 5.7rem;
+      left: -0rem;
+      transition: all ease-in-out 0.7s;
+    }
+
+    .translateY:hover::before {
+      content: "YEAH!";
+      transform: translateY(5.7rem);
     }
 
     .scaleAndOpacity {
       margin-top: 4rem;
       margin-left: 14.3rem;
+      position: relative;
+      text-align: center;
+      line-height: 4rem;
+    }
+
+    .scaleAndOpacity:hover {
+      content: "hhhh";
+      color: white;
+    }
+
+    .scaleAndOpacity::after {
+      content: "";
+      position: absolute;
+      transition: all ease-in-out 0.7s;
       height: var(--general-height);
       width: var(--general-width);
-      border: var(--general-border);
-    } */
+      left: 0;
+    }
+
+    .scaleAndOpacity:hover::after {
+      background-color: black;
+      transform: scale(1);
+      opacity: 1;
+      left: 0;
+      z-index: -1;
+    }
   </style>
   <body>
     <div class="container">
-      <div class="rotate"></div>
-      <div class="translate" data-type="translate">translate</div>
-      <div class="translateY"></div>
+      <div class="rotate size">Rotate</div>
+      <div class="translate size">Translate</div>
+      <div class="translateY size">TranslateY</div>
     </div>
-    <div class="scaleAndOpacity"></div>
+    <div class="scaleAndOpacity size">Scale and Opacity</div>
   </body>
 </html>
