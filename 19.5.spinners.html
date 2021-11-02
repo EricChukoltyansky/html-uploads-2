@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      .container {
+        display: flex;
+      }
+      .one {
+        width: 5rem;
+        height: 5rem;
+        border: 3px solid white;
+        margin: 3rem 4rem;
+        border-left-color: red;
+        border-right-color: bisque;
+        border-top-color: bisque;
+        border-bottom-color: bisque;
+        border-radius: 50%;
+        animation: spin 1s infinite linear;
+      }
+
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .two {
+        width: 5rem;
+        height: 5rem;
+        border: 3px solid black;
+        margin: 3rem 4rem;
+        border-left-color: bisque;
+        border-right-color: black;
+        border-top-color: black;
+        border-bottom: black;
+        border-radius: 50%;
+        animation: spin 1s infinite linear;
+      }
+
+      .three, .four {
+        display: flex;
+      }
+
+      .tiny1 {
+        width: 2rem;
+        height: 2rem;
+        border: 3px solid black;
+        margin: 3rem 4rem;
+        background-color: gray;
+        border-radius: 50%;
+        animation: move 1s  infinite;
+      }
+      
+
+      .tiny2 {
+        width: 2rem;
+        height: 2rem;
+        border: 3px solid black;
+        margin: 3rem 4rem;
+        background-color: gray;
+        border-radius: 50%;
+        animation: move 1.1s 0.3s infinite;
+      }
+      
+
+      .tiny3 {
+        width: 2rem;
+        height: 2rem;
+        border: 3px solid black;
+        margin: 3rem 4rem;
+        background-color: gray;
+        border-radius: 50%;
+        animation: move 1.2s 0.6s infinite;
+      }
+      @keyframes move {
+        10% {
+          /* transform:translateX(4rem); */
+          background-color: white;
+        }
+      }
+
+      .small1 {
+        width: 2rem;
+        height: 2rem;
+        border: 3px solid black;
+        margin: 3rem 4rem;
+        background-color: gray;
+        border-radius: 50%;
+        animation: bounce 1s infinite ;
+      }
+      
+
+      .small2 {
+        width: 2rem;
+        height: 2rem;
+        border: 3px solid black;
+        margin: 3rem 4rem;
+        background-color: gray;
+        border-radius: 50%;
+        animation: bounce 1s 0.3s infinite;
+      }
+      
+
+      .small3 {
+        width: 2rem;
+        height: 2rem;
+        border: 3px solid black;
+        margin: 3rem 4rem;
+        background-color: gray;
+        border-radius: 50%;
+        animation: bounce 1s 0.6s infinite;
+      }
+
+      @keyframes bounce {
+          10% {
+              height: 2rem;
+              width: 2rem;
+          }
+
+          50% {
+              transform: translateY(10rem)
+          }
+      }
+     
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three">
+        <div class="tiny1"></div>
+        <div class="tiny2"></div>
+        <div class="tiny3"></div>
+      </div>
+      <div class="four">
+        <div class="small1"></div>
+        <div class="small2"></div>
+        <div class="small3"></div>
+      </div>
+    </div>
+    
+  </body>
+</html>
