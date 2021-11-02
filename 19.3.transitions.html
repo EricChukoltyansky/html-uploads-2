@@ -19,16 +19,21 @@
       border: var(--general-border);
     }
 
+    .outer-container {
+      height: 100vh;
+      align-items: center;
+    }
+
     .container {
       display: flex;
       justify-content: space-between;
       width: 40rem;
-      /* overflow:hidden; */
+      overflow: hidden;
     }
 
     .rotate {
       position: relative;
-      overflow: hidden;
+      /* overflow: hidden; */
       text-align: center;
       line-height: 4rem;
     }
@@ -49,6 +54,7 @@
     .rotate:hover::after {
       content: "";
       transform: rotate(180deg);
+      transform-origin: top-left;
       width: var(--general-width);
       height: var(--general-height);
       top: 0;
@@ -93,7 +99,7 @@
       /* height: var(--general-height);
       width: var(--general-width);
       border: var(--general-border); */
-      text-align: center;
+      /* text-align: center; */
       line-height: 4rem;
       position: relative;
     }
@@ -103,11 +109,11 @@
       height: var(--general-height);
       width: var(--general-width);
       text-align: center;
-      line-height: 4rem;
+      /* line-height: 4rem; */
       background-color: red;
       position: absolute;
       bottom: 5.7rem;
-      left: -0rem;
+      left: 0rem;
       transition: all ease-in-out 0.7s;
     }
 
@@ -122,11 +128,15 @@
       position: relative;
       text-align: center;
       line-height: 4rem;
+      z-index: -1;
     }
 
     .scaleAndOpacity:hover {
-      content: "hhhh";
+      content: "";
       color: white;
+      font-size: 2rem;
+      /* opacity:1; */
+      transform: scale(2);
     }
 
     .scaleAndOpacity::after {
@@ -139,6 +149,7 @@
     }
 
     .scaleAndOpacity:hover::after {
+      content: "Scale and Opacity";
       background-color: black;
       transform: scale(1);
       opacity: 1;
@@ -147,11 +158,14 @@
     }
   </style>
   <body>
-    <div class="container">
-      <div class="rotate size">Rotate</div>
-      <div class="translate size">Translate</div>
-      <div class="translateY size">TranslateY</div>
+    <div class="outer-container">
+
+      <div class="container">
+        <div class="rotate size">Rotate</div>
+        <div class="translate size">Translate</div>
+        <div class="translateY size">TranslateY</div>
+      </div>
+      <div class="scaleAndOpacity size">Scale and opacity</div>
     </div>
-    <div class="scaleAndOpacity size">Scale and Opacity</div>
   </body>
 </html>
