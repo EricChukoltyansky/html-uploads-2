@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>animation</title>
+    <style>
+     
+      div {
+        width: 200px;
+        height: 200px;
+        border: 3px solid black;
+        margin: 10px 50px;
+        border-left-color: rgba(205, 205, 205, 0.8);
+        border-right-color: yellow;
+        border-top-color: blue;
+        border-bottom-color: green;
+        border-radius: 50%;
+        animation: spin 4s infinite linear;
+      }
+      @keyframes spin {
+        from {
+          transform: rotate(0);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum, <a href="#">sit</a> amet consectetur adipisicing elit. Quo,
+      sapiente officia quibusdam sint repellat porro, commodi nesciunt
+      asperiores vero quos hic molestiae, quisquam fugiat et ipsa?
+    </p>
+    <div></div>
+  </body>
+</html>
