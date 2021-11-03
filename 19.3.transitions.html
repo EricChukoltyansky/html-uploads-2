@@ -128,7 +128,7 @@
       position: relative;
       text-align: center;
       line-height: 4rem;
-      z-index: -1;
+      /* z-index: -1; */
     }
 
     .scaleAndOpacity:hover {
@@ -146,6 +146,8 @@
       height: var(--general-height);
       width: var(--general-width);
       left: 0;
+      opacity: 0;
+      transform: scale(2)
     }
 
     .scaleAndOpacity:hover::after {
@@ -154,7 +156,7 @@
       transform: scale(1);
       opacity: 1;
       left: 0;
-      z-index: -1;
+      
     }
   </style>
   <body>
